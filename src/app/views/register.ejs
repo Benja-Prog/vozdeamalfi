@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="/resources/images/Favicon.png" type="/resources/image/png">
+ 
+  
+  <!--====== Style CSS ======-->
+  
+  
+  <link rel="stylesheet" href="/resources/css/style-registro.css">
+  <title>Registro Voz de Amalfi</title>
+</head>
+<body>
+    <img class="logo-login" src="/resources/images/logo2.png" alt="logo-login">
+  <section class="form-register">
+    <h4 class="registro">Registro La Voz de Amalfi</h4>
+    <form action="register" method="POST">
+    <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Nombre de Usuario" required>
+    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellidos" required>
+    <input class="controls" type="text" name="movil" id="movil" placeholder="Ingrese su numero de celular o telefono" required>
+    <input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ingrese su Ciudad" required>
+    <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su Direcciòn" required>
+    <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" required>
+    <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"required>
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    
+    <input class="botons" type="submit" value="Registrarme">
+    <p><a   href="login">¿Ya tengo Cuenta?</a></p>
+    <p><a   href="/">REGRESAR A INICIO</a></p>
+    </form>
+    
+  </section>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <% if(typeof alert !="undefined") { %>
+    <script>
+        Swal.fire({
+            title: '<%= alertTitle  %>',
+            text: '<%= alertMessage %>',
+            icon: '<%= alertIcon %>',
+            showConfirmButton:'<%= showConfirmButton %>',
+            timer:  '<%= timer %>',
+        }).then(()=>{
+            window.location= '/<%= ruta %>'
+        })
+    </script>
+    <% } %>
+</body>
+</html>

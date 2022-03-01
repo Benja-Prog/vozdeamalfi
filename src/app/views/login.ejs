@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/resources/images/Favicon.png" type="/resources/image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="/resources/css/style-login.css">
+    
+</head>
+<body>
+    <body>
+        <img class="logo-login" src="/resources/images/logo2.png" alt="logo-login">
+
+        <div class="login">
+            <div class="login-screen">
+                <div class="app-title">
+                    <h1>Ingresar</h1>
+                </div>
+                    
+                <div class="login-form">
+                    <form action="/auth" method="POST">
+                    <div class="control-group">
+                    <input type="text" class="login-field" name="usuario" value="" placeholder="Nombre de Usuario" id="usuario">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+    
+                    <div class="control-group">
+                    <input type="password" class="login-field" name="password" value="" placeholder="Ingrese su password" id="password">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+    
+                    <input class="btn btn-primary btn-large btn-block" type="submit" value="Ingresar">
+                    <a class="login-link" href="register">Deseo Registrarme</a>
+                    <a class="login-link" href="/">REGRESAR A INICIO</a>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <% if(typeof alert !="undefined") { %>
+    <script>
+        Swal.fire({
+            title: '<%= alertTitle  %>',
+            text: '<%= alertMessage %>',
+            icon: '<%= alertIcon %>',
+            showConfirmButton:'<%= showConfirmButton %>',
+            timer:  '<%= timer %>',
+        }).then(()=>{
+            window.location= '/<%= ruta %>'
+        })
+    </script>
+    <% } %>
+    </body>
+</body>
+</html>

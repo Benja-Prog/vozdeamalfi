@@ -1,0 +1,700 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>La voz de Amalfi | Amalfi</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/resources/images/Favicon.png" type="/resources/image/png">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="/resources/css/animate.css">
+        
+    <!--====== Glide CSS ======-->
+    <link rel="stylesheet" href="/resources/css/tiny-slider.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="/resources/css/LineIcons.2.0.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="/resources/css/bootstrap-5.0.0-beta1.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="/resources/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" src="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
+
+    
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = 'bf4ec5a589b1858b9d13ab3f3b6153948defae49';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
+</head>
+
+
+<body>
+
+    <div class="container-boton">
+        <a href="https://ehjliad9dcvst52tj1p9qq-on.drv.tw/Streaming_amalfi/Reproductor.html" target="blank">
+            <img src="/resources/images/en_vivo.gif" class="flotante-en-vivo">
+        </a>
+    
+    </div>
+    
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section id="home" class="header_area">
+        <div id="header_navbar" class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.ejs">
+                                <img id="logo" src="/resources/images/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll active" href="#home">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#services">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Equipo</a>
+                                    </li>
+                                                                       
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#blog">Programaciòn</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- <a class="page-scroll" href="#portfolio">Sorteos</a> -->
+                                        
+                                    </li>
+                                    <li class="nav-item">
+                                       
+                                        <% if (login) { %>
+                                            <a><strong><%= nombre %></strong></a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="page-scroll" href="/">Cerrar sessión</a>
+                                            <% } else { %>
+                                            <h1><strong><%= nombre %></strong></h1>
+                                            <a href="login" class="page-scroll"></a>
+                                        <% } %>
+                                    </li>
+                                                 
+                                        
+                                    
+                                
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+
+        <div class="header_hero">
+            <div class="single_hero bg_cover d-flex align-items-center" style="background-image: url(/resources/images/hero.gif)">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="hero_content text-center">
+                                <!--
+                                <h2 class="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">LA CALIENTE 1330</br>Bienvenidos</h2>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s"> ¡Siempre Arriba! <br class="d-none d-xl-block"> </p>
+                                <a href="#contact" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Contáctanos</a>
+                            -->
+                            </div> <!-- hero content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single hero -->
+        </div> <!-- header hero -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+      
+    
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="pt-130">
+        <div class="about_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about_content pt-120 pb-130">
+                            <div class="section_title pb">
+                                <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Nosotros</h4>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor
+                                    sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut
+                                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores et erebum</p>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Lorem ipsum dolor
+                                    sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore etdolore maali quyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores</p>
+                            </div> <!-- section title -->
+                            <a href="#0" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
+                                data-wow-delay="0.7s">Aprende màs</a>
+                        </div> <!-- about content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            
+            <div class="about_image bg_cover wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.2s"
+                style="background-image: url(/resources/images/about2.jpg)">
+                <div class="image_content">
+                    <h4 class="experience"><span>48</span> Años de Experiencia</h4>
+                </div>
+            </div> <!-- about image -->
+        </div>
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== FEATURES PART START ======-->
+
+    <section id="services" class="features_area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">SERVICIOS</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.2s">
+                        <i class="lni lni-microphone"></i>
+                        <h4 class="features_title">Radio</h4>
+                        
+                        <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .</p>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.3s">
+                        <i class="lni lni-facebook-oval"></i>
+                        <h4 class="features_title">Redes Sociales</h4>
+                        <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .</p>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.4s">
+                        <i class="lni lni-target-revenue"></i>
+                        <h4 class="features_title">Publicidad</h4>
+                        <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .</p>
+                    </div> <!-- single features -->
+                </div>
+                
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FEATURES PART ENDS ======-->
+
+     <!--====== PRICING PART START ======-->
+
+     <section id="pricing" class="pricing_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Paquetes Publicitarios</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_pricing text-center mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.2s">
+                        <h4 class="pricing_title">Redes Sociales</h4>
+                        <span class="price">$240</span>
+                        <ul class="pricing_list">
+                            <li>Startup Business</li>
+                            <li>Business Consulting</li>
+                            <li>Business Analysis</li>
+                            <li>Corporate Business</li>
+                            <li>Business Investment</li>
+                        </ul>
+                        <a href="#contact" class="mian-btn">Ordenar</a>
+                    </div> <!-- single pricing -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_pricing text-center mt-30 active wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.3s">
+                        <h4 class="pricing_title">Radio</h4>
+                        <span class="price">$340</span>
+                        <ul class="pricing_list">
+                            <li>Startup Business</li>
+                            <li>Business Consulting</li>
+                            <li>Business Analysis</li>
+                            <li>Corporate Business</li>
+                            <li>Business Investment</li>
+                        </ul>
+                        <a href="#contact" class="mian-btn">Ordenar</a>
+                    </div> <!-- single pricing -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_pricing text-center mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.4s">
+                        <h4 class="pricing_title">Redes y Radio</h4>
+                        <span class="price">$440</span>
+                        <ul class="pricing_list">
+                            <li>Startup Business</li>
+                            <li>Business Consulting</li>
+                            <li>Business Analysis</li>
+                            <li>Corporate Business</li>
+                            <li>Business Investment</li>
+                        </ul>
+                        <a href="#contact" class="mian-btn">Ordenar</a>
+                    </div> <!-- single pricing -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PRICING PART ENDS ======-->
+
+    <!--====== TEAM PART START ======-->
+
+    <section id="team" class="team_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">TEAM DE LA CALIENTE</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Cargos Administrativos</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center team_active">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <img src="/resources/images/ELENA.jpg" alt="team">
+                        
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#0">Maria Elena González</a></h4>
+                            <p>Gerente</p>
+                            <ul class="social">
+                                <li><a href="#0"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#0"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="#0"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+                
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        <img src="/resources/images/Milena.jpeg" alt="team">
+                        
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#0">Milena Castaño</a></h4>
+                            <p>Secretaria</p>
+                            <ul class="social">
+                                <li><a href="#0"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#0"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="#0"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div class="single_team mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <img src="/resources/images/Kangry.jpeg" alt="team">
+                        
+                        <div class="team_content">
+                            <h4 class="team_name"><a href="#0">Benjamin Bedoya</a></h4>
+                            <p>Locutor - Productor</p>
+                            <ul class="social">
+                                <li><a href="#0"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#0"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="#0"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        
+        <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-60">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">GALERIA DE IMAGENES</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s"> </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="portfolio_wrapper d-flex flex-wrap">
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <img src="/resources/images/yo amalfi.jpg" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Parque Principal</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                <img src="/resources/images/paz y progreso.jpg" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Fiestas de la Paz y El Progreso</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <img src="/resources/images/juliana.webp" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Juliana - Periodista</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                <img src="/resources/images/johan.webp" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Joham - Community Manage</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                <img src="/resources/images/felipe.webp" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Felipe - Community Manage</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                <img src="/resources/images/andres.webp" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Andres Quintero - Producción</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <img src="/resources/images/fer.webp" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Fernanda - Ejecutiva de Ventas</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->
+            <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                <img src="/resources/images/luisa.webp" alt="portfolio">
+                <div class="portfolio_content">
+                    <ul class="meta">
+                        <li><a href="#0"><i class="lni lni-link"></i></a></li>
+                    </ul>
+                    <h5 class="portfolio_title">Luisa - Ejecutiva de Ventas</h5>
+                </div> <!-- Single portfolio -->
+            </div> <!-- portfolio wrapper -->       
+               
+        
+    </div> <!-- row -->
+    </section>
+
+    <!--====== TEAM PART ENDS ======-->
+    
+    <!--====== PORTFOLIO PART START ======-->
+
+    
+    <!--====== PORTFOLIO PART ENDS ======-->
+          
+       
+    <!--====== TESTIMONIAL PART START 
+
+    <section id="testimonial" class="testimonial_area pt-130 pb-130 bg_cover" style="background-image: url(src/public/images/Equipo.jpeg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonial_active_wrapper">
+                        <div class="testimonial_active">
+                            <div class="single_testimonial text-center">
+                                <img src="src/public/images/Jota.jpg" alt="author">
+                                <h5 class="author_name">Jonnattan Orguello</h5>
+                                <span>Locutor</span>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                    vero eos accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                            </div>
+                            <div class="single_testimonial text-center">
+                                <img src="src/public/images/Kangry.jpg" alt="author">
+                                <h5 class="author_name">Benjamin Bedoya</h5>
+                                <span>Locutor</span>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                    vero eos accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                            </div>
+                            <div class="single_testimonial text-center">
+                                <img src="src/public/images/Joham.jpg" alt="author">
+                                <h5 class="author_name">Joham Rodriguez</h5>
+                                <span>Locucion y Redes</span>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                    vero eos accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> container 
+    </section>-->
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+    
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="blog_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">PROGRAMACIÓN</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single_blog mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="blog_image">
+                            <img src="/resources/images/blog-1.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.Lorem ipsum dolor sit amet, conse sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.2s">
+                        <div class="blog_image">
+                            <img src="/resources/images/blog-2.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content media-body">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
+                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.</p>
+                            <a href="#0" class="more">Read More</a>
+                        </div>
+                    </div> <!-- single blog -->
+                    
+                    <div class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.3s">
+                        <div class="blog_image">
+                            <img src="/resources/images/blog-3.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content media-body">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
+                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.</p>
+                            <a href="#0" class="more">Read More</a>
+                        </div>
+                    </div> <!-- single blog -->
+                    
+                    <div class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.4s">
+                        <div class="blog_image">
+                            <img src="/resources/images/blog-4.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content media-body">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
+                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.</p>
+                            <a href="#0" class="more">Read More</a>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_title text-center pb-25">
+                    
+                    <br>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flavozdeamalfi%2F&tabs=timeline&width=800&height=750&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="800" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+    </div>
+    <br>
+    
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact_area bg_cover pt-120 pb-130" style="background-image: url(/resources/images/El-tigre-de-amalfi.png)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title section_title_2 text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">CONTÁCTANOS</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            
+            <form id="contact-form" action="src/contact.php" method="post" class="wow fadeInUp"
+                data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Nombre" name="name" id="name" required>
+                        </div> <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                        </div> <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Numero de Telefono" name="number" id="number" required>
+                        </div> <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Asunto" name="subject" id="subject" required>
+                        </div> <!-- single form -->
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="single_form">
+                            <textarea placeholder="Mensaje" name="message" id="message" required></textarea>
+                        </div> <!-- single form -->
+                    </div>
+                    
+                    <p class="form-message"></p>
+                    
+                    <div class="col-lg-12">
+                        <div class="single_form text-center">
+                            <button class="main-btn" type="submit">ENVIAR</button>
+                        </div> <!-- single form -->
+                    </div>
+                </div> <!-- row -->
+            </form>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer_area">
+        <div class="container">
+            <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
+                <p class="credit">Todos los derechos reservados <a href="https://uideck.com" rel="nofollow">La Caliente 1330</a></p>
+                <div class="footer_social pt-15">
+                    <ul>
+                        <li><a href="#0"><i class="lni lni-facebook-original"></i></a></li>
+                        <li><a href="#0"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="#0"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="#0"><i class="lni lni-linkedin-original"></i></a></li>
+                    </ul>
+                </div> <!-- footer social -->
+            </div> <!-- footer wrapper -->
+        </div> <!-- container -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    
+    <!--====== Bootstrap js ======-->
+    <script src="/resources/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+    
+    <!--====== glide js ======-->
+    <script src="/resources/js/tiny-slider.js"></script>
+    
+    <!--====== wow js ======-->
+    <script src="/resources/js/wow.min.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="/resources/js/main.js"></script>
+    
+</body>
+
+</html>
