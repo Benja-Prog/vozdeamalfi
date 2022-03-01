@@ -14,4 +14,13 @@ CREATE TABLE usuarios(
     password VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE contacto (
+  id_contacto INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(100) NOT NULL,
+  email VARCHAR(75) NOT NULL,
+  telefono VARCHAR(20) NOT NULL,
+  asunto VARCHAR(20) NOT NULL,
+  mensaje VARCHAR(500) NOT NULL
+  );
+
 DESCRIBE usuarios;

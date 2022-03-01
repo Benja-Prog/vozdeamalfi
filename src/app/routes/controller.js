@@ -33,6 +33,8 @@ app.get('/aprende_mas', (req, res) => {
 
 
 
+
+
 //Registro de usuarios
 
 app.post('/register', async (req, res) => {
@@ -140,5 +142,40 @@ app.get('logout', (req, res) => {
         res.redirect('/');
     })
 })
+
+app.post('/', async (req, res) => {
+    try {
+      const { nombre, email, telefono, asunto, mensaje } = req.body;
+    console.log(req.body);
+    let login = req.session.isloggedin ? true : false;
+    connection.query(
+      "INSERT INTO contacto SET ?",{
+        nombre: nombre,
+        email: email,
+        telefono: telefono,
+        asunto: asunto,
+        mensaje: mensaje,},
+        async (error, results) => {
+        if (error) {
+          console.log("Que error tengo: " + error);
+        } else {
+          res.render("index.ejs", {
+            login,
+            alert: true,
+            alertTitle: "Enviado",
+            alertMessage: "¡Te estaremos contactando!",
+            alertIcon: "success",
+            showConfirmButton: false,
+            timer: 3000,
+            ruta: "auth"
+          });
+        }
+      }
+    );
+    } catch (error) {
+      console.log('Error: '+error);
+    }
+  })
+ 
 
 }

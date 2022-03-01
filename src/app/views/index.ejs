@@ -598,12 +598,12 @@
                 </div>
             </div> <!-- row -->
             
-            <form id="contact-form" action="/send-email" method="POST" class="wow fadeInUp"
+            <form id="contact-form" action="/" method="POST" class="wow fadeInUp"
                 data-wow-duration="1.3s" data-wow-delay="0.4s">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="single_form">
-                            <input type="text" placeholder="Nombre" name="name" id="name">
+                            <input type="text" placeholder="Nombre" name="nombre" id="nombre">
                         </div> <!-- single form -->
                     </div>
                     <div class="col-lg-6">
@@ -613,17 +613,17 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
-                            <input type="text" placeholder="Numero de Telefono" name="number" id="number">
+                            <input type="text" placeholder="Numero de Telefono" name="telefono" id="telefono">
                         </div> <!-- single form -->
                     </div>
                     <div class="col-lg-6">
                         <div class="single_form">
-                            <input type="text" placeholder="Asunto" name="subject" id="subject" >
+                            <input type="text" placeholder="Asunto" name="asunto" id="asunto" >
                         </div> <!-- single form -->
                     </div>
                     <div class="col-lg-12">
                         <div class="single_form">
-                            <textarea placeholder="Mensaje" name="message" id="message"></textarea>
+                            <textarea placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
                         </div> <!-- single form -->
                     </div>
                     
@@ -694,7 +694,23 @@
     
     <!--====== Main js ======-->
     <script src="/resources/js/main.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
+    <% if(typeof alert !="undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle  %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton:'<%= showConfirmButton %>',
+                timer:  2500
+            }).then(()=>{
+                window.location= '/<%= ruta %>'
+            })
+        </script>
+    <% } %>
+
 </body>
 
 </html>
